@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Mad bike</title>
+
+	<!-- библиотеки подключаем впереди наших файлов, чтобы не перекрывались -->
+	<script type="text/javascript" src="libs/jquery.js"></script>
+
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="libs/font-awesome/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="libs/slick/slick.css"/>
+
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<header class="header container">
+		<a href="/" class="header__logo">
+			<i class="fas fa-biking"></i>
+			<span class="header__logo-text">
+				<span class="header__title">
+					Mad bike
+				</span>
+				<span class="header__subtitle">
+					Товары для спорта
+				</span>
+			</span>
+		</a>
+		<nav class="header__nav" role="navigation">
+			<ul class="header__menu">
+				<a href="#"><li class="header__menu-item">Главная</li></a>
+				<a href="#"><li class="header__menu-item">Товары</li></a>
+				<a href="#"><li class="header__menu-item">Новости</li></a>
+				<a href="#"><li class="header__menu-item">О нас</li></a>
+			</ul>
+		</nav>
+		<div class="header__contacts">
+			<div class="header__contact">
+				<div class="header__contact-title">Email:</div>
+				<a href="mailto:madbike@gmail.com">madbike@gmail.com</a>
+			</div>
+			<div class="header__contact">
+				<div class="header__contact-title">Телефон:</div>
+				<a href="tel:+72345678900">+7 234 567-89-00</a>
+			</div>
+		</div>
+		<button class="btn btn-regular header__button">Заказать звонок</button>
+		<div class="header__cart">
+			<div class="header__cart-icon"><i class="fas fa-shopping-cart"></i></div>
+			<div class="header__price">1019 ₽ <i class="fas fa-chevron-down"></i></div>
+			<div class="header__cart-body">
+				<div class="header__product">
+					<div class="header__product-thumb">
+						<img src="img/catalog6.png" alt="catalog6">
+					</div>
+					<div class="header__product-name">
+						Мяч для регби Wilson NFL OFFICAL
+					</div>
+					<div class="header__product-price">
+						1 399 ₽
+					</div>
+					<i class="fas fa-times header__close"></i>
+				</div>
+				<div class="header__product">
+					<div class="header__product-thumb">
+						<img src="img/catalog6.png" alt="catalog6">
+					</div>
+					<div class="header__product-name">
+						Мяч для регби Wilson NFL OFFICAL
+					</div>
+					<div class="header__product-price">
+						1 399 ₽
+					</div>
+					<i class="fas fa-times header__close"></i>
+				</div>
+				<div class="header__product">
+					<div class="header__product-thumb">
+						<img src="img/catalog6.png" alt="catalog6">
+					</div>
+					<div class="header__product-name">
+						Мяч для регби Wilson NFL OFFICAL
+					</div>
+					<div class="header__product-price">
+						1 399 ₽
+					</div>
+					<i class="fas fa-times header__close"></i>
+				</div>
+				<div class="header__product">
+					<div class="header__product-thumb">
+						<img src="img/catalog6.png" alt="catalog6">
+					</div>
+					<div class="header__product-name">
+						Мяч для регби Wilson NFL OFFICAL
+					</div>
+					<div class="header__product-price">
+						1 399 ₽
+					</div>
+					<i class="fas fa-times header__close"></i>
+				</div>
+				<div class="header__product">
+					<div class="header__product-thumb">
+						<img src="img/catalog6.png" alt="catalog6">
+					</div>
+					<div class="header__product-name">
+						Мяч для регби Wilson NFL OFFICAL
+					</div>
+					<div class="header__product-price">
+						1 399 ₽
+					</div>
+					<i class="fas fa-times header__close"></i>
+				</div>
+
+				<footer class="header__cart-footer">
+					<button class="btn btn-regular header__buy-btn">Оформить заказ</button>
+				</footer>
+			</div>
+		</div>
+		<div id="nav-icon4" class="header__burger">
+		  	<span></span>
+		  	<span></span>
+		  	<span></span>
+		</div>
+	</header>
+
+	<div class="hero">
+		<div class="social">
+			<a href="#" class="social__link">
+				<i class="fab fa-twitter"></i>
+			</a>
+			<a href="#" class="social__link">
+				<i class="fab fa-facebook-f"></i>
+			</a>
+			<a href="#" class="social__link">
+				<i class="fab fa-instagram"></i>
+			</a>
+			<a href="#" class="social__link">
+				<i class="fab fa-youtube"></i>
+			</a>
+			<a href="#" class="social__link">
+				<i class="fab fa-linkedin-in"></i>
+			</a>
+			<p class="social__text">
+				Мы в сети —
+			</p>
+		</div>
+		<div class="hero__offer">
+			<h1 class="hero__heading">
+				Лучшие спортивные<br>товары по лучшей <br>цене
+			</h1>
+			<p class="hero__subtitle">
+				В нашем магазине есть всё!<br>
+				От велосипеда до боксёрских перчаток.
+			</p>
+			<a href="#">
+				<button class="btn btn-solid hero__button">Смотреть каталог</button>
+			</a>
+		</div>
+		<div class="hero__slider">
+			<div class="hero__slider-block active">
+				<a href="#">
+					<img src="img/main_slider1.png" alt="main_slider photo X_X">
+				</a>
+				<div class="hero__product-thumb">
+					<div style="" class="hero__product-header">
+						<a href="#" class="hero__product-img">
+							<img src="img/news1.png" alt="bike">
+						</a>
+						<div class="hero__product-name">
+							Велосипед FORWARD
+						</div>
+					</div>
+					<div class="hero__product-prices">
+						<div class="hero__product-price_line-through">
+							17 990 ₽
+						</div>
+						<div class="hero__product-price_active">
+							15 990 ₽
+						</div>
+					</div>
+					<button class="btn btn-regular hero__product-btn">
+						Добавить в корзину
+					</button>
+				</div>
+			</div>
+			<div class="hero__slider-block ">
+				<a href="#">
+					<img src="img/banner2.png" alt="main_slider photo X_X">
+				</a>
+				<div class="hero__product-thumb">
+					<div style="" class="hero__product-header">
+						<a href="#" class="hero__product-img">
+							<img src="img/catalog6.png" alt="bike">
+						</a>
+						<div class="hero__product-name">
+							Мяч для регби Wilson NFL OFFICAL
+						</div>
+					</div>
+					<div class="hero__product-prices">
+						<div class="hero__product-price_line-through">
+							1 799
+						</div>
+						<div class="hero__product-price_active">
+							1 399 ₽
+						</div>
+					</div>
+					<button class="btn btn-regular hero__product-btn">
+						Добавить в корзину
+					</button>
+				</div>
+			</div>
+			<div class="hero__slider-block ">
+				<a href="#">
+					<img src="img/banner1.png" alt="main_slider photo X_X">
+				</a>
+				<div class="hero__product-thumb">
+					<div style="" class="hero__product-header">
+						<a href="#" class="hero__product-img">
+							<img src="img/news3.png" alt="bike">
+						</a>
+						<div class="hero__product-name">
+							Перчатки боксерские Demix
+						</div>
+					</div>
+					<div class="hero__product-prices">
+						<div class="hero__product-price_line-through">
+							1 990 ₽
+						</div>
+						<div class="hero__product-price_active">
+							990 ₽
+						</div>
+					</div>
+					<button class="btn btn-regular hero__product-btn">
+						Добавить в корзину
+					</button>
+				</div>
+			</div>
+
+			<div class="hero__slider-bullets">
+				<div class="hero__slider-bullet active"></div>
+				<div class="hero__slider-bullet"></div>
+				<div class="hero__slider-bullet"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="novelties">
+			<h2 class="title novelties__title">
+				Новинки
+			</h2>
+			<div class="novelties__slider">
+				<div class="cart novelties__cart">
+					<div class="cart__tag tag-new">NEW</div>
+					<div class="cart__image">
+						<img src="img/news1.png" alt="Кроссовки мужские Demix Backstreet" class="">
+					</div>
+					<h3 class="cart__title">
+						Велосипед FORWARD  APACHE
+					</h3>
+					<p class="cart__description">
+						Велосипед Forward Stern Energy 1.0 с алюминиевой рамой для поклонников активного отдыха. Трансмиссия Shimano Tourney и удобные шифтеры
+					</p>
+					<div class="cart__price">
+						15 590 ₽
+					</div>
+					<button class="btn btn-regular cart__btn">
+						Добавить в корзину
+					</button>
+				</div>
+				<div class="cart novelties__cart">
+					<div class="cart__tag tag-new">NEW</div>
+					<div class="cart__image">
+						<img src="img/news6.jpg" alt="Мяч футбольный Select Futsal Mimas" class="">
+					</div>
+					<h3 class="cart__title">
+						Мяч футбольный Select Futsal Mimas
+					</h3>
+					<p class="cart__description">
+						Мяч для мини-футбола с покрышкой из термополиуретана. Камера со специальным наполнителем обеспечивает низкий отскок мяча.
+					</p>
+					<div class="cart__price">
+						8 990 ₽
+					</div>
+					<button class="btn btn-regular cart__btn">
+						Добавить в корзину
+					</button>
+				</div>
+				<div class="cart novelties__cart">
+					<div class="cart__tag tag-new">NEW</div>
+					<div class="cart__image">
+						<img src="img/news3.png" alt="Кроссовки мужские Demix Backstreet" class="">
+					</div>
+					<h3 class="cart__title">
+						Перчатки боксерские детские Demix
+					</h3>
+					<p class="cart__description">
+						Детские боксерские перчатки начального уровня от Demix, выполненные из прочного высококачественного полиуретана и нервущиеся от ударов.
+					</p>
+					<div class="cart__price">
+						990 ₽
+					</div>
+					<button class="btn btn-regular cart__btn">
+						Добавить в корзину
+					</button>
+				</div>
+				<div class="cart novelties__cart">
+					<div class="cart__tag tag-new">NEW</div>
+					<div class="cart__image">
+						<img src="img/news4.png" alt="Шлем хоккейный Nordway 3 SR" class="">
+					</div>
+					<h3 class="cart__title">
+						Шлем хоккейный Nordway 3 SR
+					</h3>
+					<p class="cart__description">
+						Классический взрослый хоккейный шлем от Nordway для полевого игрока. Модель рассчитана на широкий круг любителей профессионального хоккея.
+					</p>
+					<div class="cart__price">
+						990 ₽
+					</div>
+					<button class="btn btn-regular cart__btn">
+						Добавить в корзину
+					</button>
+				</div>
+				<div class="cart novelties__cart">
+					<div class="cart__tag tag-new">NEW</div>
+					<div class="cart__image">
+						<img src="img/news4.png" alt="Шлем хоккейный Nordway 3 SR" class="">
+					</div>
+					<h3 class="cart__title">
+						Шлем хоккейный Nordway 3 SR
+					</h3>
+					<p class="cart__description">
+						Классический взрослый хоккейный шлем от Nordway для полевого игрока. Модель рассчитана на широкий круг любителей профессионального хоккея.
+					</p>
+					<div class="cart__price">
+						990 ₽
+					</div>
+					<button class="btn btn-regular cart__btn">
+						Добавить в корзину
+					</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="banners">
+			<div class="banners__banner">
+				<a href="#">
+					<img src="img/banner1.png" alt="Скидка">
+				</a>
+				<div class="banners__info">
+					<p class="banners__banner-name">
+						Скидка на снаряжение для единоборств - 35%<br>
+						Только в этом месяце!
+					</p>
+					<a href="#">
+						<button class="btn btn-regular banners__btn">
+							Узнать подробнее
+						</button>
+					</a>
+				</div>
+			</div>
+			<div class="banners__banner">
+				<a href="#">
+					<img src="img/banner2.png" alt="Скидка">
+				</a>
+				<div class="banners__info">
+					<p class="banners__banner-name">
+						Защитная экипировка для игры в регби <br>
+						со скидкой 60%!
+					</p>
+					<a href="#">
+						<button class="btn btn-regular banners__btn">
+							Узнать подробнее
+						</button>
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="catalog">
+			<h2 class="title catalog__title">
+				Каталог товаров
+			</h2>
+			<div class="catalog__list">
+				<div class="cart catalog__cart">
+					<div class="cart__image">
+						<img src="img/catalog1.png" alt="Кроссовки мужские Demix Backstreet" class="">
+					</div>
+					<h3 class="cart__title">
+						Кроссовки мужские Demix Backstreet
+					</h3>
+					<p class="cart__description">
+						Высокие кроссовки для баскетбола от Demix, выполненные из комбинированных материалов. Надежно фиксирует голеностоп.
+					</p>
+					<div class="cart__price">
+						2 099 ₽
+					</div>
+					<button class="btn btn-regular cart__btn">
+						Добавить в корзину
+					</button>
+				</div>
+				<div class="cart catalog__cart">
+					<div class="cart__image">
+						<img src="img/catalog2.png" alt="Шлем хоккейный Bauer Prodigy" class="">
+					</div>
+					<h3 class="cart__title">
+						Шлем хоккейный Bauer Prodigy
+					</h3>
+					<p class="cart__description">
+						Хоккейный шлем Bauer, разработанный специально для детей. Модель рекомендована юным хоккеистам для игры на среднем уровне.
+					</p>
+					<div class="cart__price">
+						8 990 ₽
+					</div>
+					<button class="btn btn-regular cart__btn">
+						Добавить в корзину
+					</button>
+				</div>
+				<div class="cart catalog__cart">
+					<div class="cart__tag tag-new">NEW</div>
+					<div class="cart__image">
+						<img src="img/news3.png" alt="Перчатки боксерские детские Demix">
+					</div>
+					<h3 class="cart__title">
+						Перчатки боксерские детские Demix
+					</h3>
+					<p class="cart__description">
+						Детские боксерские перчатки начального уровня от Demix, выполненные из прочного высококачественного полиуретана.
+					</p>
+					<div class="cart__price">
+						990 ₽
+					</div>
+					<button class="btn btn-regular cart__btn">
+						Добавить в корзину
+					</button>
+				</div>
+				<div class="cart catalog__cart">
+					<div class="cart__tag tag-new">NEW</div>
+					<div class="cart__image">
+						<img src="img/news4.png" alt="Перчатки боксерские детские Demix">
+					</div>
+					<h3 class="cart__title">
+						Шлем хоккейный Nordway 3 SR
+					</h3>
+					<p class="cart__description">
+						Классический взрослый хоккейный шлем от Nordway для полевого игрока. Модель рассчитана на широкий круг любителей хоккея.
+					</p>
+					<div class="cart__price">
+						2 399 ₽
+					</div>
+					<button class="btn btn-regular cart__btn">
+						Добавить в корзину
+					</button>
+				</div>
+				<div class="cart catalog__cart">
+					<div class="cart__image">
+						<img src="img/catalog5.png" alt="Ветровка мужская Nike Windrunner">
+					</div>
+					<h3 class="cart__title">
+						Ветровка мужская Nike Windrunner
+					</h3>
+					<p class="cart__description">
+						Классическая беговая ветровка Nike Windrunner - это легкость, комфорт и защита от непогоды во время занятий спортом. 
+					</p>
+					<div class="cart__price">
+						8 299 ₽
+					</div>
+					<button class="btn btn-regular cart__btn">
+						Добавить в корзину
+					</button>
+				</div>
+				<div class="cart catalog__cart">
+					<div class="cart__image">
+						<img src="img/catalog6.png" alt="Мяч для регби Wilson NFL OFFICAL">
+					</div>
+					<h3 class="cart__title">
+						Мяч для регби Wilson NFL OFFICAL
+					</h3>
+					<p class="cart__description">
+						Сувенирный мяч для американского футбола от Wilson - прекрасный подарок любителям этого вида спорта. Сделан из прочного материала. 
+					</p>
+					<div class="cart__price">
+						1 399 ₽
+					</div>
+					<button class="btn btn-regular cart__btn">
+						Добавить в корзину
+					</button>
+				</div>
+				<div class="cart catalog__cart">
+					<div class="cart__image">
+						<img src="img/catalog7.png" alt="Шлем боксерский Green Hill Special">
+					</div>
+					<h3 class="cart__title">
+						Шлем боксерский Green Hill Special
+					</h3>
+					<p class="cart__description">
+						Универсальная защита для тренировок по боксу, ММА, самбо. Шлем изготовлен из искусственной кожи. Двойная система крепления.
+					</p>
+					<div class="cart__price">
+						1 099 ₽
+					</div>
+					<button class="btn btn-regular cart__btn">
+						Добавить в корзину
+					</button>
+				</div>
+				<div class="cart catalog__cart">
+					<div class="cart__image">
+						<img src="img/catalog8.png" alt="Скейтборд детский Termit 100">
+					</div>
+					<h3 class="cart__title">
+						Скейтборд детский Termit 100
+					</h3>
+					<p class="cart__description">
+						Скейтборд от Termit для детей весом до 35 кг. С ним ребенок легко освоит базовые навыки катания. Надежная девятислойная дека.
+					</p>
+					<div class="cart__price">
+						2 990 ₽
+					</div>
+					<button class="btn btn-regular cart__btn">
+						Добавить в корзину
+					</button>
+				</div>
+			</div>
+			<div class="catalog__footer">
+				<button class="btn btn-solid catalog__btn">
+					Смотреть весь каталог
+				</button>
+			</div>
+		</div>
+
+		<div class="numbers">
+			<h2 class="title numbers__title">
+				О «Mad bike» в цифрах
+			</h2>
+			<div class="numbers__list">
+				<div class="numbers__block">
+					<div class="numbers__number">
+						1236
+					</div>
+					<div class="numbers__num-info">
+						товаров
+					</div>
+				</div>
+				<div class="numbers__block">
+					<div class="numbers__number">
+						3
+					</div>
+					<div class="numbers__num-info">
+						года на рынке
+					</div>
+				</div>
+				<div class="numbers__block">
+					<div class="numbers__number">
+						989
+					</div>
+					<div class="numbers__num-info">
+						клиентов
+					</div>
+				</div>
+					<div class="numbers__block">
+					<div class="numbers__number">
+						129
+					</div>
+					<div class="numbers__num-info">
+						магазинов
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="partners">
+			<h2 class="title partners__title">
+				С нами работают
+			</h2>
+			<div class="partners__list">
+				<div class="partners__partner">
+					<img src="img/brand1.png" alt="brand">
+				</div>
+				<div class="partners__partner">
+					<img src="img/brand2.png" alt="brand">
+				</div>
+				<div class="partners__partner">
+					<img src="img/brand3.png" alt="brand">
+				</div>
+				<div class="partners__partner">
+					<img src="img/brand4.png" alt="brand">
+				</div>
+				<div class="partners__partner">
+					<img src="img/brand5.png" alt="brand">
+				</div>
+				<div class="partners__partner">
+					<img src="img/brand6.png" alt="brand">
+				</div>
+				<div class="partners__partner">
+					<img src="img/brand5.png" alt="brand">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer class="footer">
+		<a href="/" class="footer__logo">
+			<i class="fas fa-biking"></i>
+			<span class="footer__logo-text">
+				<span class="footer__title">
+					Mad bike
+				</span>
+				<span class="footer__subtitle">
+					Товары для спорта
+				</span>
+			</span>
+		</a>
+		<nav class="footer__nav" role="navigation">
+			<ul class="footer__menu">
+				<a href="#"><li class="footer__menu-item">Главная</li></a>
+				<a href="#"><li class="footer__menu-item">Товары</li></a>
+				<a href="#"><li class="footer__menu-item">Новости</li></a>
+				<a href="#"><li class="footer__menu-item">О нас</li></a>
+			</ul>
+		</nav>
+		<span class="footer__rights">Все права защищены.</span>
+		<span class="footer__worktime">Пн-Пт 9:00-20:00</span>
+		<span class="footer__phone">+1 234 567-89-00</span>
+		<button class="btn btn-regular footer__btn">Заказать звонок</button>
+	</footer>
+
+	<script type="text/javascript" src="libs/slick/slick.min.js"></script>
+	<script type="text/javascript" src="js/all.js"></script>
+</body>
+</html>
