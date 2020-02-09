@@ -1,0 +1,1 @@
+$(document).ready(function(){$(".header__menu-item a").each(function(){window.location.href==this.href&&$(this).parent().addClass("active")})});

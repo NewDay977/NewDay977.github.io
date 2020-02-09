@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Название сайта</title>
+
+	<script type="text/javascript" src="libs/jquery.js"></script>
+
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="libs/font-awesome/css/all.min.css">
+
+	<!-- layout (structure) -->
+	<link rel="stylesheet" href="css/layout.css" id="layout_css">
+	<!-- styles (colors, fonts etc.) -->
+	<link rel="stylesheet" href="css/style.css" id="style_css">
+</head>
+<body>
+	<header class="header">
+		<div class="wrapper">
+			<div class="header__logo">
+				<a href="/">Название</a>
+			</div>
+
+			<div class="header__main">
+				<nav class="header__nav">
+					<ul class="header__menu">
+						<li class="header__menu-item">
+							<a href="index.html">Последние статьи</a>
+						</li>
+						<li class="header__menu-item">
+							<a href="#">Кулинария</a>
+						</li>
+						<li class="header__menu-item">
+							<a href="#">Садоводство</a>
+						</li>
+						<li class="header__menu-item">
+							<a href="#">Спорт</a>
+						</li>
+					</ul>
+				</nav>
+				<a href="#" class="header__entry">Войти</a>
+			</div>
+			<button class="header__burger">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+		</div>
+	</header>
+
+	<h1 class="title wrapper">Последние статьи</h1>
+	<main class="wrapper main">
+		<article class="articles">
+			<div class="articles__list">
+				<section class="article article_big" data-article_id="1">
+					<a href="#"><img src="/img/vinograd.png" alt="Как правильно ухаживать за виноградом - советы бывалых"></a>
+					<header class="article__header">
+						<time class="article__time"><a href="#">08-02-2019</a></time>
+						<a href="#" rel="author" class="article__author">Папаня</a>
+						<span class="like article__like">
+							<!-- Для бэкенда!! Если лайк поставлен, то просто поменять класс с far на fas -->
+							<i class="far fa-heart like__icon"></i>
+							<span class="like__count">25</span>
+						</span>
+						<span class="article__category">
+							<a href="#">Садоводство</a>
+						</span>
+					</header>
+					<h3 class="title article__title">Как правильно ухаживать за виноградом - советы бывалых</h3>
+					<p class="article__preview">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis elit...
+					</p>
+					<a href="#" class="btn btn-regular article__btn">Перейти к статье</a>
+				</section>
+				<section class="articles__col">
+					<section class="article" data-article_id="2">
+						<a href="#"><img src="/img/main_b_kak-prigotovit-solyanku-poshagovyiy-retsept-s-foto.jpg" alt="Лучшие рецепты приготовления солянки"></a>
+						<header class="article__header">
+							<time class="article__time"><a href="#">08-02-2019</a></time>
+							<a href="#" rel="author" class="article__author">Маманя</a>
+							<span class="like article__like">
+								<!-- Для бэкенда!! Если лайк поставлен, то просто поменять класс с far на fas -->
+								<i class="far fa-heart like__icon"></i>
+								<span class="like__count">17</span>
+							</span>
+							<span class="article__category">
+								<a href="#">Кулинария</a>
+							</span>
+						</header>
+						<h3 class="title article__title">Лучшие рецепты приготовления солянки</h3>
+						<p class="article__preview">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida...
+						</p>
+						<a href="#" class="btn btn-regular article__btn">Перейти к статье</a>
+					</section>
+					<section class="article" data-article_id="3">
+						<a href="#"><img src="img/travel_by_car.jpg" alt="vinograd"></a>
+						<header class="article__header">
+							<time class="article__time"><a href="#">08-02-2019</a></time>
+							<a href="#" rel="author" class="article__author">Папаня</a>
+							<span class="like article__like">
+								<!-- Для бэкенда!! Если лайк поставлен, то просто поменять класс с far на fas -->
+								<i class="far fa-heart like__icon"></i>
+								<span class="like__count">29</span>
+							</span>
+							<span class="article__category">
+								<a href="#">Спорт</a>
+							</span>
+						</header>
+						<h3 class="title article__title">Путешествие на машине: 5 правил</h3>
+						<p class="article__preview">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida...
+						</p>
+						<a href="#" class="btn btn-regular article__btn">Перейти к статье</a>
+					</section>
+					<div class="ad">*Реклама*</div>
+				</section>
+				<section class="articles__col">
+					<section class="article" data-article_id="3">
+						<a href="#"><img src="img/travel_by_car.jpg" alt="vinograd"></a>
+						<header class="article__header">
+							<time class="article__time"><a href="#">08-02-2019</a></time>
+							<a href="#" rel="author" class="article__author">Папаня</a>
+							<span class="like article__like">
+								<!-- Для бэкенда!! Если лайк поставлен, то просто поменять класс с far на fas -->
+								<i class="far fa-heart like__icon"></i>
+								<span class="like__count">29</span>
+							</span>
+							<span class="article__category">
+								<a href="#">Спорт</a>
+							</span>
+						</header>
+						<h3 class="title article__title">Путешествие на машине: 5 правил</h3>
+						<p class="article__preview">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida...
+						</p>
+						<a href="#" class="btn btn-regular article__btn">Перейти к статье</a>
+					</section>
+					<div class="ad">*Реклама*</div>
+					<section class="article" data-article_id="2">
+						<a href="#"><img src="/img/main_b_kak-prigotovit-solyanku-poshagovyiy-retsept-s-foto.jpg" alt="Лучшие рецепты приготовления солянки"></a>
+						<header class="article__header">
+							<time class="article__time"><a href="#">08-02-2019</a></time>
+							<a href="#" rel="author" class="article__author">Маманя</a>
+							<span class="like article__like">
+								<!-- Для бэкенда!! Если лайк поставлен, то просто поменять класс с far на fas -->
+								<i class="far fa-heart like__icon"></i>
+								<span class="like__count">17</span>
+							</span>
+							<span class="article__category">
+								<a href="#">Кулинария</a>
+							</span>
+						</header>
+						<h3 class="title article__title">Лучшие рецепты приготовления солянки</h3>
+						<p class="article__preview">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida...
+						</p>
+						<a href="#" class="btn btn-regular article__btn">Перейти к статье</a>
+					</section>
+				</section>	
+			</div>
+		</article>
+		<aside class="sibebar">
+			<div class="widget sibebar__widget widget-popular-article" data-article_id="1">
+				<h2 class="title widget__title">Самая популярная статья</h2>
+				<div class="article article_big" data-article_id="1">
+					<a href="#"><img src="/img/vinograd.png" alt="Как правильно ухаживать за виноградом - советы бывалых"></a>
+					<header class="article__header">
+						<span class="like article__like">
+							<!-- Для бэкенда!! Если лайк поставлен, то просто поменять класс с far на fas -->
+							<i class="far fa-heart like__icon"></i>
+							<span class="like__count">25</span>
+						</span>
+					</header>
+					<h3 class="title article__title">Как правильно ухаживать за виноградом - советы бывалых</h3>
+					<a href="#" class="btn btn-regular">Перейти к статье</a>
+				</div>
+			</div>
+
+			<div class="widget sibebar__widget widget-search">
+				<input type="text" class="widget-search-input" placeholder="Быстрый поиск">
+				<button class="widget-search-submit"><i class="fas fa-search"></i></button>
+			</div>
+
+			<div class="ad">*Реклама*</div>
+			<div class="ad">*Реклама*</div>
+
+			<div class="widget sibebar__widget widget-tags">
+				<h2 class="title widget__title">Статьи</h2>
+				<ul class="widget-tags-list">
+					<li class="widget-tags-item"><a href="#">Садоводство</a></li>
+					<li class="widget-tags-item"><a href="#">Кулинария</a></li>
+					<li class="widget-tags-item"><a href="#">Спорт</a></li>
+					<li class="widget-tags-item"><a href="#">Путешествия</a></li>
+					<li class="widget-tags-item"><a href="#">Работа</a></li>
+					<li class="widget-tags-item"><a href="#">Кулинария</a></li>
+					<li class="widget-tags-item"><a href="#">Спорт</a></li>
+					<li class="widget-tags-item"><a href="#">Работа</a></li>
+					<li class="widget-tags-item"><a href="#">Кулинария</a></li>
+					<li class="widget-tags-item"><a href="#">Спорт</a></li>
+					<li class="widget-tags-item"><a href="#">Работа</a></li>
+					<li class="widget-tags-item"><a href="#">Кулинария</a></li>
+					<li class="widget-tags-item"><a href="#">Спорт</a></li>
+					<li class="widget-tags-item"><a href="#">Работа</a></li>
+					<li class="widget-tags-item"><a href="#">Кулинария</a></li>
+					<li class="widget-tags-item"><a href="#">Спорт</a></li>
+				</ul>
+			</div>
+		</aside>
+	</main>
+
+	<footer class="footer">
+		<div class="wrapper">
+			<div class="footer__logo">
+				<a href="/">Название</a>
+			</div>
+			<ul class="footer__social">
+				<li class="footer__social-link">
+					<a href="#"><i class="fab fa-vk"></i></a>
+				</li>
+				<li class="footer__social-link">
+					<a href="#"><i class="fab fa-odnoklassniki"></i></a>
+				</li>
+				<li class="footer__social-link">
+					<a href="#"><i class="fab fa-instagram"></i></a>
+				</li>
+				<li class="footer__social-link">
+					<a href="#"><i class="fab fa-whatsapp"></i></a>
+				</li>
+				<li class="footer__social-link">
+					<a href="#"><i class="fab fa-viber"></i></a>
+				</li>
+			</ul>
+		</div>
+	</footer>
+
+	<script src="js/adaptive.js"></script>
+	<script src="js/theme.js"></script>
+</body>
+</html>

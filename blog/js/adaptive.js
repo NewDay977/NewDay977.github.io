@@ -1,0 +1,1 @@
+$(document).ready(function(){var e=$(".header__burger"),n=$(".header__main");e.on("click",function(){$(this).toggleClass("open"),n.slideToggle()}),$(window).resize(function(){993<=$(window).width()&&(n.attr("style",""),e.removeClass("open"))})});
