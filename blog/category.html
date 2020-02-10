@@ -32,10 +32,10 @@
 							<a href="category.html">Кулинария</a>
 						</li>
 						<li class="header__menu-item">
-							<a href="category.html">Садоводство</a>
+							<a href="#">Садоводство</a>
 						</li>
 						<li class="header__menu-item">
-							<a href="category.html">Спорт</a>
+							<a href="#">Спорт</a>
 						</li>
 					</ul>
 				</nav>
@@ -49,17 +49,19 @@
 		</div>
 	</header>
 
-	<h1 class="title wrapper">Последние статьи</h1>
+	<h1 class="title wrapper">Статьи в категории «Кулинария»</h1>
 	<main class="wrapper main">
 		<article class="articles">
 			<div class="articles__list">
-				<section class="article" data-article_id="1">
+				<section class="article category-article" data-article_id="1">
 					<a href="post.html"><img src="/img/vinograd.png" alt="Как правильно ухаживать за виноградом - советы бывалых"></a>
 					<header class="article__header">
 						<time class="article__time"><a href="#">08-02-2019</a></time>
 						<a href="#" rel="author" class="article__author">Папаня</a>
-						<span class="article__rep article__rep_positive">
-							+3
+						<span class="like article__like">
+							<!-- Для бэкенда!! Если лайк поставлен, то просто поменять класс с far на fas -->
+							<i class="far fa-heart like__icon"></i>
+							<span class="like__count">25</span>
 						</span>
 						<span class="article__category">
 							<a href="#">Садоводство</a>
@@ -72,13 +74,15 @@
 					<a href="post.html" class="btn btn-regular article__btn">Перейти к статье</a>
 				</section>
 				
-				<section class="article" data-article_id="2">
+				<section class="article category-article" data-article_id="2">
 					<a href="post.html"><img src="/img/main_b_kak-prigotovit-solyanku-poshagovyiy-retsept-s-foto.jpg" alt="Лучшие рецепты приготовления солянки"></a>
 					<header class="article__header">
 						<time class="article__time"><a href="#">08-02-2019</a></time>
 						<a href="#" rel="author" class="article__author">Маманя</a>
-						<span class="article__rep article__rep_positive">
-							+17
+						<span class="like article__like">
+							<!-- Для бэкенда!! Если лайк поставлен, то просто поменять класс с far на fas -->
+							<i class="far fa-heart like__icon"></i>
+							<span class="like__count">17</span>
 						</span>
 						<span class="article__category">
 							<a href="#">Кулинария</a>
@@ -90,13 +94,39 @@
 					</p>
 					<a href="post.html" class="btn btn-regular article__btn">Перейти к статье</a>
 				</section>
-				<section class="article" data-article_id="3">
+				<section class="article category-article" data-article_id="3">
 					<a href="post.html"><img src="img/travel_by_car.jpg" alt="vinograd"></a>
 					<header class="article__header">
 						<time class="article__time"><a href="#">08-02-2019</a></time>
 						<a href="#" rel="author" class="article__author">Папаня</a>
-						<span class="article__rep article__rep_negative">
-							-1
+						<span class="like article__like">
+							<!-- Для бэкенда!! Если лайк поставлен, то просто поменять класс с far на fas -->
+							<i class="far fa-heart like__icon"></i>
+							<span class="like__count">29</span>
+						</span>
+						<span class="article__category">
+							<a href="#">Спорт</a>
+						</span>
+					</header>
+					<h3 class="title article__title">Путешествие на машине: 5 правил</h3>
+					<p class="article__preview">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida...
+					</p>
+					<a href="post.html" class="btn btn-regular article__btn">Перейти к статье</a>
+				</section>
+
+
+				<div class="ad">*Реклама*</div>
+		
+				<section class="article category-article" data-article_id="3">
+					<a href="post.html"><img src="img/travel_by_car.jpg" alt="vinograd"></a>
+					<header class="article__header">
+						<time class="article__time"><a href="#">08-02-2019</a></time>
+						<a href="#" rel="author" class="article__author">Папаня</a>
+						<span class="like article__like">
+							<!-- Для бэкенда!! Если лайк поставлен, то просто поменять класс с far на fas -->
+							<i class="far fa-heart like__icon"></i>
+							<span class="like__count">29</span>
 						</span>
 						<span class="article__category">
 							<a href="#">Спорт</a>
@@ -109,33 +139,15 @@
 					<a href="post.html" class="btn btn-regular article__btn">Перейти к статье</a>
 				</section>
 				<div class="ad">*Реклама*</div>
-				
-				<section class="article" data-article_id="3">
-					<a href="#"><img src="img/travel_by_car.jpg" alt="vinograd"></a>
-					<header class="article__header">
-						<time class="article__time"><a href="#">08-02-2019</a></time>
-						<a href="post.html" rel="author" class="article__author">Папаня</a>
-						<span class="article__rep">
-							0
-						</span>
-						<span class="article__category">
-							<a href="post.html">Спорт</a>
-						</span>
-					</header>
-					<h3 class="title article__title">Путешествие на машине: 5 правил</h3>
-					<p class="article__preview">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida...
-					</p>
-					<a href="post.html" class="btn btn-regular article__btn">Перейти к статье</a>
-				</section>
-				<div class="ad">*Реклама*</div>
-				<section class="article" data-article_id="2">
+				<section class="article category-article" data-article_id="2">
 					<a href="#"><img src="/img/main_b_kak-prigotovit-solyanku-poshagovyiy-retsept-s-foto.jpg" alt="Лучшие рецепты приготовления солянки"></a>
 					<header class="article__header">
 						<time class="article__time"><a href="#">08-02-2019</a></time>
 						<a href="post.html" rel="author" class="article__author">Маманя</a>
-						<span class="article__rep article__rep_positive">
-							+34
+						<span class="like article__like">
+							<!-- Для бэкенда!! Если лайк поставлен, то просто поменять класс с far на fas -->
+							<i class="far fa-heart like__icon"></i>
+							<span class="like__count">17</span>
 						</span>
 						<span class="article__category">
 							<a href="#">Кулинария</a>
@@ -146,8 +158,26 @@
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida...
 					</p>
 					<a href="post.html" class="btn btn-regular article__btn">Перейти к статье</a>
-				</section>
-					
+				</section>	
+			</div>
+			<div class="pagination">
+				<ul class="pagination__pages">
+					<li class="pagination__page pagination__back">
+						<a href="#" class="pagination__link">←</a>
+					</li>
+					<li class="pagination__page">
+						<a href="#" class="pagination__link">1</a>
+					</li>
+					<li class="pagination__page">
+						<a href="#" class="pagination__link">2</a>
+					</li>
+					<li class="pagination__page">
+						<a href="#" class="pagination__link">3</a>
+					</li>
+					<li class="pagination__page pagination__forward">
+						<a href="#" class="pagination__link">→</a>
+					</li>
+				</ul>
 			</div>
 		</article>
 		<aside class="sibebar">

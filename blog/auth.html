@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Название сайта</title>
+
+	<script src="libs/jquery.js"></script>
+
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="libs/font-awesome/css/all.min.css">
+
+	<!-- layout (structure) -->
+	<link rel="stylesheet" href="css/layout.css" id="layout_css">
+	<!-- styles (colors, fonts etc.) -->
+	<link rel="stylesheet" href="css/style.css" id="style_css">
+</head>
+<body>
+	<header class="header">
+		<div class="wrapper">
+			<div class="header__logo">
+				<a href="/">Название</a>
+			</div>
+
+			<div class="header__main">
+				<nav class="header__nav">
+					<ul class="header__menu">
+						<li class="header__menu-item">
+							<a href="index.html">Последние статьи</a>
+						</li>
+						<li class="header__menu-item">
+							<a href="category.html">Кулинария</a>
+						</li>
+						<li class="header__menu-item">
+							<a href="category.html">Садоводство</a>
+						</li>
+						<li class="header__menu-item">
+							<a href="category.html">Спорт</a>
+						</li>
+					</ul>
+				</nav>
+				<a href="#" class="header__entry">Войти</a>
+			</div>
+			<button class="header__burger">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+		</div>
+	</header>
+
+	<h1 class="title wrapper">Авторизация пользователя</h1>
+	<main class="wrapper main">
+		<article class="articles content">
+			<form action="#" class="form auth-form">
+
+				<label class="form__label">
+					<p>Логин</p>
+					<input type="text" class="form__input" id="login" placeholder="Логин" required>
+					<p class="error-message"></p>
+				</label>
+
+				<label class="form__label">
+					<p>Пароль</p>
+					<input type="password" class="form__input" id="password" placeholder="Пароль" required>
+					<p class="error-message"></p>
+				</label>
+
+				<div class="text-center">
+					<button class="btn btn-regular form__btn" type="submit">Зарегистрироваться</button>
+				</div>
+				<div class="text-center form__link-block">
+					<a href="#" class="form__link">Забыли пароль?</a>
+				</div>
+				<div class="text-center form__link-block">
+					<a href="reg.html" class="form__link">Регистрация</a>
+				</div>
+			</form>
+		</article>
+		<aside class="sibebar">
+			<div class="widget sibebar__widget widget-popular-article" data-article_id="1">
+				<h2 class="title widget__title">Самая популярная статья</h2>
+				<div class="article article_big" data-article_id="1">
+					<a href="#"><img src="/img/vinograd.png" alt="Как правильно ухаживать за виноградом - советы бывалых"></a>
+					<header class="article__header">
+						<span class="like article__like">
+							<!-- Для бэкенда!! Если лайк поставлен, то просто поменять класс с far на fas -->
+							<i class="far fa-heart like__icon"></i>
+							<span class="like__count">25</span>
+						</span>
+					</header>
+					<h3 class="title article__title">Как правильно ухаживать за виноградом - советы бывалых</h3>
+					<a href="#" class="btn btn-regular">Перейти к статье</a>
+				</div>
+			</div>
+
+			<div class="widget sibebar__widget widget-search">
+				<input type="text" class="widget-search-input" placeholder="Быстрый поиск">
+				<button class="widget-search-submit"><i class="fas fa-search"></i></button>
+			</div>
+
+			<div class="ad">*Реклама*</div>
+			<div class="ad">*Реклама*</div>
+
+			<div class="widget sibebar__widget widget-tags">
+				<h2 class="title widget__title">Статьи</h2>
+				<ul class="widget-tags-list">
+					<li class="widget-tags-item"><a href="#">Садоводство</a></li>
+					<li class="widget-tags-item"><a href="#">Кулинария</a></li>
+					<li class="widget-tags-item"><a href="#">Спорт</a></li>
+					<li class="widget-tags-item"><a href="#">Путешествия</a></li>
+					<li class="widget-tags-item"><a href="#">Работа</a></li>
+					<li class="widget-tags-item"><a href="#">Кулинария</a></li>
+					<li class="widget-tags-item"><a href="#">Спорт</a></li>
+					<li class="widget-tags-item"><a href="#">Работа</a></li>
+					<li class="widget-tags-item"><a href="#">Кулинария</a></li>
+					<li class="widget-tags-item"><a href="#">Спорт</a></li>
+					<li class="widget-tags-item"><a href="#">Работа</a></li>
+					<li class="widget-tags-item"><a href="#">Кулинария</a></li>
+					<li class="widget-tags-item"><a href="#">Спорт</a></li>
+					<li class="widget-tags-item"><a href="#">Работа</a></li>
+					<li class="widget-tags-item"><a href="#">Кулинария</a></li>
+					<li class="widget-tags-item"><a href="#">Спорт</a></li>
+				</ul>
+			</div>
+		</aside>
+	</main>
+
+	<footer class="footer">
+		<div class="wrapper">
+			<div class="footer__logo">
+				<a href="/">Название</a>
+			</div>
+			<ul class="footer__social">
+				<li class="footer__social-link">
+					<a href="#"><i class="fab fa-vk"></i></a>
+				</li>
+				<li class="footer__social-link">
+					<a href="#"><i class="fab fa-odnoklassniki"></i></a>
+				</li>
+				<li class="footer__social-link">
+					<a href="#"><i class="fab fa-instagram"></i></a>
+				</li>
+				<li class="footer__social-link">
+					<a href="#"><i class="fab fa-whatsapp"></i></a>
+				</li>
+				<li class="footer__social-link">
+					<a href="#"><i class="fab fa-viber"></i></a>
+				</li>
+			</ul>
+		</div>
+	</footer>
+
+	<script src="js/forms.js"></script>
+	<script src="js/adaptive.js"></script>
+	<script src="js/theme.js"></script>
+</body>
+</html>
