@@ -1,0 +1,72 @@
+/*
+ * This file contains styles can be changed dependent on theme.
+ * If u want to change theme, u have to change this href to design file.
+ * @author EgorBalakin
+ */
+
+:root {
+	/* colors */
+	--blue: #34547a;
+	--light-blue: #4772a6;
+	--cream: #eeeff1;
+	--dark-cream: #727272;
+}
+
+.header, .header__menu {
+	background: var(--cream);
+}
+
+.header__logo {
+	color: var(--blue);
+}
+
+.header__nav-item:hover {
+	color: var(--blue);
+}
+
+.header__burger span {
+	background: var(--blue);
+}
+
+.hero {
+	background: var(--cream);
+}
+
+.paragraph {
+	color: var(--dark-cream);
+}
+
+.hero__cta, .form__submit-btn {
+	background: var(--blue);
+	color: #fff;
+}
+
+.hero__cta:hover, .form__submit-btn:hover {
+	color: #fff;
+	background: var(--light-blue);
+}
+
+.section_dark {
+	background: var(--blue);
+	color: #fff;
+}
+
+.skills__item-label {
+	color: var(--dark-cream);
+}
+
+.skills__progress-bar {
+	background: #c4c4c4;
+}
+
+.skills__progress-line {
+	background: var(--blue);
+}
+
+.section_cream {
+	background: var(--cream);
+}
+
+.photos__item:hover:after {
+	background: rgba(52, 84, 122, 0.8) url(../img/eye.png) no-repeat center;
+}

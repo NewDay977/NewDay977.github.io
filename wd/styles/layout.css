@@ -1,0 +1,377 @@
+/*
+ * This file contains styles that won't be changed dependent on theme.
+ * If u want to change theme, u have to change color styles.
+ * @author EgorBalakin
+ */
+
+* {
+	padding: 0;
+	margin: 0;
+	outline: none;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Roboto, sans-serif;
+}
+
+.header {
+	height: 100px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	align-items: flex-end;
+}
+
+.header .container, .hero .container {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.header__logo {
+	font-family: Revalia, sans-serif;
+	font-size: 48px;
+	text-transform: uppercase;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+
+.header__menu {
+	list-style-type: none;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+
+.header__nav-item {
+	font-size: 16px;
+	text-transform: uppercase;
+	font-weight: 500;
+	margin-left: 42px;
+	letter-spacing: 0.1em;
+	transition: 0.3s;
+}
+
+.header__burger {
+	width: 40px;
+	cursor: pointer;
+	display: none;
+}
+
+.header__burger span {
+	display: block;
+	height: 4px;
+	width: 100%;
+}
+
+.header__burger span:nth-child(2) {
+	margin: 6px 0;
+}
+
+.hero {
+	padding: 120px 0;
+}
+
+.hero .container {
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	-o-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+
+.hero__img {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: calc(50% - 20px);
+}
+
+.hero__img img {
+	width: 60%;
+}
+
+.hero__intro {
+	width: calc(50% - 20px);
+}
+
+.hero__cta {
+	display: inline-block;
+	letter-spacing: 0.1em;
+	font-weight: 400;
+	text-transform: uppercase;
+	padding: 25px 41px;
+	transition: 0.3s;
+}
+
+.hero__paragraph {
+	margin: 60px 0;
+}
+
+.about {
+	text-align: center;
+}
+
+.paragraph_section {
+	width: 50%;
+	margin: 0 auto;
+	margin-top: 50px;
+}
+
+.stats__list {
+	list-style-type: none;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	-o-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+
+.stats__item {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	width: 16%;
+}
+
+.stats__label {
+	margin-left: 20px;
+}
+
+.stats__stat-name {
+	display: block;
+	margin-top: 10px;
+}
+
+.skills .container {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	-webkit-flex-wrap: wrap-reverse;
+	-moz-flex-wrap: wrap-reverse;
+	-ms-flex-wrap: wrap-reverse;
+	-o-flex-wrap: wrap-reverse;
+	flex-wrap: wrap-reverse;
+}
+
+.skills__hero, .skills__photo {
+	width: calc(50% - 20px);
+}
+
+.skills__list {
+	list-style-type: none;
+	margin-top: 50px;
+	width: 80%;
+}
+
+.skills__item-label {
+	font-size: 16px;
+	display: inline-block;
+	margin-bottom: 20px;
+}
+
+.skills__progress-bar {
+	height: 4px;
+}
+
+.skills__progress-line {
+	height: 100%;
+}
+
+.skills__item:not(:last-child) {
+	margin-bottom: 30px;
+}
+
+.work {
+	text-align: center;
+}
+
+.work__video {
+	margin-top: 50px;
+	width: 100%;
+	height: 600px;
+}
+
+.photos {
+	padding: 0;
+}
+
+.photos__list {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	-o-flex-wrap: wrap;
+	flex-wrap: wrap;
+	list-style-type: none;
+}
+
+.photos__item {
+	width: 25%;
+	position: relative;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+
+.photos__item img {
+	height: 100%;
+	width: 100%;
+}
+
+.photos__item:hover:after {
+	content: "";
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.companies__list {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	-o-flex-wrap: wrap;
+	flex-wrap: wrap;
+	list-style-type: none;
+}
+
+.companies__item {
+	text-align: center;
+	width: 25%;
+	padding: 0px 20px;
+}
+
+.form {
+	text-align: center;
+}
+
+.form__inputs {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	-o-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+
+.form__input {
+	height: 50px;
+	padding: 0 20px;
+	width: calc(50% - 10px);
+}
+
+.form__textarea {
+	width: 100%;
+	margin-top: 20px;
+	height: 175px;
+	padding: 17px 20px;
+	resize: none;
+}
+
+.form__input, .form__textarea {
+	border: none;
+}
+
+.form__submit-btn {
+	display: inline-block;
+	letter-spacing: 0.1em;
+	font-weight: 400;
+	text-transform: uppercase;
+	padding: 25px 41px;
+	transition: 0.3s;
+	border: none;
+	cursor: pointer;
+	margin-top: 20px;
+}
+
+.footer {
+	padding: 50px 0;
+}
+
+.footer .container {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	-o-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+
+.footer__name {
+	font-weight: 500;
+	font-size: 21px;
+	display: block;
+	margin-bottom: 20px;
+}
+
+.footer__rights-proof {
+	font-size: 13px;
+}
+
+.footer__social {
+	list-style-type: none;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+
+.footer__social-link {
+	padding: 0 10px;
+}

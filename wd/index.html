@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>WD - дизайн и вёрстка</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- jQuery -->
+	<script src="vendor/jquery.min.js"></script>
+
+	<link rel="stylesheet" href="vendor/normalize.css">
+
+	<!-- default styles -->
+	<link rel="stylesheet" href="styles/default.css">
+
+	<!-- layout (arrangement of blocks, their interaction with each other) -->
+	<link rel="stylesheet" href="styles/layout.css">
+
+	<!-- design (colors) - if u want to change theme, u have to change this href to design file. -->
+	<link rel="stylesheet" href="styles/design-light.css" id="design">
+
+	<!-- media queries -->
+	<link rel="stylesheet" href="styles/media.css">
+</head>
+<body>
+	<header class="header">
+		<div class="container">
+			<div class="header__logo">
+				wd
+			</div>
+			<div class="header__nav">
+				<ul class="header__menu">
+					<li class="header__nav-item">
+						<a href="#">главная</a>
+					</li>
+					<li class="header__nav-item">
+						<a href="#">об авторе</a>
+					</li>
+					<li class="header__nav-item">
+						<a href="#">работы</a>
+					</li>
+					<li class="header__nav-item">
+						<a href="#">процесс</a>
+					</li>
+					<li class="header__nav-item">
+						<a href="#">контакты</a>
+					</li>
+				</ul>
+				<div class="header__burger">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div class="hero">
+		<div class="container">
+			<div class="hero__img">
+				<img src="img/laptop.png" alt="I AM HERO!">
+			</div>
+			<div class="hero__intro">
+				<h1 class="title hero__title">Дизайн и верстка</h1>
+				<p class="paragraph hero__paragraph">
+					Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.
+				</p>
+				<a href="#" class="hero__cta">Написать мне</a>
+			</div>
+		</div>
+	</div>
+
+	<main class="main">
+		<article>
+			<section class="section about">
+				<div class="container">
+					<h2 class="title">Обо мне</h2>
+					<p class="paragraph about__paragraph paragraph_section">
+						Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.
+					</p>
+				</div>
+			</section>
+
+			<section class="section stats section_dark">
+				<div class="container">
+					<ul class="stats__list">
+						<li class="stats__item">
+							<img src="img/group.png" alt="group">
+							<div class="stats__label">
+								<strong class="stat__count">40 +</strong>
+								<span class="stats__stat-name">проектов</span>
+							</div>
+						</li>
+						<li class="stats__item">
+							<img src="img/group.png" alt="group">
+							<div class="stats__label">
+								<strong class="stat__count">40 +</strong>
+								<span class="stats__stat-name">проектов</span>
+							</div>
+						</li>
+						<li class="stats__item">
+							<img src="img/group.png" alt="group">
+							<div class="stats__label">
+								<strong class="stat__count">40 +</strong>
+								<span class="stats__stat-name">проектов</span>
+							</div>
+						</li>
+						<li class="stats__item">
+							<img src="img/group.png" alt="group">
+							<div class="stats__label">
+								<strong class="stat__count">40 +</strong>
+								<span class="stats__stat-name">проектов</span>
+							</div>
+						</li>
+						<li class="stats__item">
+							<img src="img/group.png" alt="group">
+							<div class="stats__label">
+								<strong class="stat__count">40 +</strong>
+								<span class="stats__stat-name">проектов</span>
+							</div>
+						</li>
+						<li class="stats__item">
+							<img src="img/group.png" alt="group">
+							<div class="stats__label">
+								<strong class="stat__count">40 +</strong>
+								<span class="stats__stat-name">проектов</span>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section>
+
+			<section class="section skills">
+				<div class="container">
+					<div class="skills__hero">
+						<h2 class="title">Мои навыки</h2>
+						<ul class="skills__list">
+							<li class="skills__item">
+								<span class="skills__item-label">Adobe Photoshop</span>
+								<div class="skills__progress-bar">
+									<div class="skills__progress-line" style="width: 75%;"></div>
+								</div>
+							</li>
+							<li class="skills__item">
+								<span class="skills__item-label">HTML</span>
+								<div class="skills__progress-bar">
+									<div class="skills__progress-line" style="width: 93%;"></div>
+								</div>
+							</li>
+							<li class="skills__item">
+								<span class="skills__item-label">CSS</span>
+								<div class="skills__progress-bar">
+									<div class="skills__progress-line" style="width: 78%;"></div>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="skills__photo">
+						<img src="img/morda.png" alt="MOUYA MORDA">
+					</div>
+				</div>
+			</section>
+
+			<section class="section work section_cream">
+				<div class="container">
+					<h2 class="title">Как я работаю</h2>
+					<p class="paragraph work__paragraph paragraph_section">
+						Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.
+					</p>
+					<iframe class="work__video" src="https://www.youtube.com/embed/AkdzLbPwy7o" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+			</section>
+
+			<section class="section photos">
+				<ul class="photos__list">
+					<li class="photos__item">
+						<img src="img/sheets.png" alt="my working sheets">
+					</li>
+					<li class="photos__item">
+						<img src="img/working_time.png" alt="my working process">
+					</li>
+					<li class="photos__item">
+						<img src="img/sheets.png" alt="my working sheets">
+					</li>
+					<li class="photos__item">
+						<img src="img/working_time.png" alt="my working process">
+					</li>
+					<li class="photos__item">
+						<img src="img/working_time.png" alt="my working process">
+					</li>
+					<li class="photos__item">
+						<img src="img/sheets.png" alt="my working sheets">
+					</li>
+					<li class="photos__item">
+						<img src="img/working_time.png" alt="my working process">
+					</li>
+					<li class="photos__item">
+						<img src="img/sheets.png" alt="my working sheets">
+					</li>
+				</ul>
+			</section>
+
+			<section class="section companies">
+				<div class="container">
+					<ul class="companies__list">
+						<li class="companies__item">
+							<a href="#">
+								<img src="img/microsoft.png" alt="microsoft">
+							</a>
+						</li>
+						<li class="companies__item">
+							<a href="#">
+								<img src="img/microsoft.png" alt="microsoft">
+							</a>
+						</li>
+						<li class="companies__item">
+							<a href="#">
+								<img src="img/microsoft.png" alt="microsoft">
+							</a>
+						</li>
+						<li class="companies__item">
+							<a href="#">
+								<img src="img/microsoft.png" alt="microsoft">
+							</a>
+						</li>
+					</ul>
+				</div>
+			</section>
+
+			<section class="section form section_cream">
+				<div class="container">
+					<h2 class="title">Хотите веб-сайт?</h2>
+					<p class="paragraph form__paragraph paragraph_section">
+						Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.
+					</p>
+					<form action="#" class="form__form paragraph_section">
+						<div class="form__inputs">
+							<input type="text" placeholder="Ваше имя" name="name" id="name" class="form__input">
+							<input type="text" placeholder="Ваш e-mail" name="email" id="email" class="form__input">
+						</div>
+						<textarea name="message" id="message" placeholder="Сообщение" class="form__textarea"></textarea>
+						<button class="form__submit-btn" type="submit">Отправить</button>
+					</form>
+				</div>
+			</section>
+		</article>
+	</main>
+
+	<footer class="footer section_dark">
+		<div class="container">
+			<div class="footer__rights">
+				<strong class="footer__name">Иванов Иван</strong>
+				<small class="footer__rights-proof">(с) 2018. Все права защищены.</small>
+			</div>
+			<div class="footer__contacts">
+				<ul class="footer__social">
+					<li class="footer__social-link">
+						<a href="#">
+							<img src="img/vk.png" alt="vk">
+						</a>
+					</li>
+					<li class="footer__social-link">
+						<a href="#">
+							<img src="img/vk.png" alt="vk">
+						</a>
+					</li>
+					<li class="footer__social-link">
+						<a href="#">
+							<img src="img/vk.png" alt="vk">
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+
+	<script src="js/main.js"></script>
+</body>
+</html>

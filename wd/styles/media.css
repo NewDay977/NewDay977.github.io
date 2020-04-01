@@ -1,0 +1,131 @@
+/*
+ * This file contains media queries.
+ * @author EgorBalakin
+ */
+
+
+@media (max-width: 992px) {
+	.header {
+		position: relative;
+	}
+
+	.header__menu {
+		display: none;
+		position: absolute;
+		top: 100px;
+		left: 0;
+		width: 100%;
+		padding-top: 20px;
+		z-index: 9999;
+	}
+
+	.header__nav-item {
+		width: 100%;
+		padding: 10px 0;
+		text-align: center;
+		margin: 0;
+	}
+
+	.header__burger {
+		display: block;
+	}
+
+	.hero__img img {
+		width: 75%;
+	}
+
+	.paragraph_section {
+		width: 75%;
+	}
+
+	.stats__item {
+		width: 26%;
+		margin-bottom: 30px;
+	}
+
+	.work__video {
+		height: 450px;
+	}
+
+	.photos__item, .companies__item {
+		width: 33.33333333%;
+	}
+}
+
+
+@media (max-width: 767px) {
+	.hero__img, .hero__intro {
+		width: 100%;
+	}
+
+	.hero__paragraph {
+		margin: 30px 0;
+	}
+
+	.hero__intro {
+		text-align: center;
+		margin-top: 30px;
+	}
+
+	.hero__img img {
+		width: 50%;
+	}
+
+	.stats {
+		padding-right: 30px;
+		padding-left: 30px;
+	}
+
+	.skills__hero {
+		margin-top: 60px;
+	}
+
+	.skills__hero, .skills__photo {
+		width: 100%;
+	}
+
+	.skills__photo {
+		text-align: center;
+	}
+
+	.skills__photo img {
+		width: 70%;
+	}
+
+	.photos__item, .companies__item {
+		width: 50%;
+	}
+}
+
+
+@media (max-width: 578px) {
+	.hero__img img {
+		width: 70%;
+	}
+
+	.paragraph_section {
+		width: 90%;
+	}
+
+	.stats__item {
+		width: 35%;
+	}
+
+	.work__video {
+		height: 300px;
+	}
+
+	.photos__item, .companies__item {
+		width: 100%;
+	}
+
+	.footer .container {
+		justify-content: center;
+	}
+
+	.footer__rights {
+		width: 100%;
+		text-align: center;
+		margin-bottom: 30px;
+	}
+}

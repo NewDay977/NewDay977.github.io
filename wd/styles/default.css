@@ -1,0 +1,74 @@
+/*
+ * This file contains default styles.
+ * May contain media queries too...
+ * @author EgorBalakin
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+@font-face {
+	font-family: Revalia;
+	src: url(../fonts/Revalia/Revalia-Regular.woff2);
+}
+
+a, a:hover {
+	color: inherit;
+	text-decoration: inherit;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.container {
+	width: 100%;
+	margin: 0 auto;
+	max-width: 100%;
+}
+
+@media (min-width: 768px) {
+	.container {
+		width: 750px;
+	}
+}
+
+@media (min-width: 992px) {
+	.container {
+		width: 970px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.container {
+		width: 1170px;
+	}
+}
+
+@media (max-width: 767px) {
+	.container {
+		padding-right: 15px;
+		padding-left: 15px;
+	}
+}
+
+.title {
+	font-weight: 500;
+	margin: 0;
+}
+
+h1.title {
+	font-size: 48px;
+}
+
+h2.title {
+	font-size: 32px;
+}
+
+.paragraph {
+	line-height: 26px;
+}
+
+.section {
+	padding: 100px 0;
+}
